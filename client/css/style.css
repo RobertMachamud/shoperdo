@@ -1,0 +1,154 @@
+html,
+body {
+	margin: 0;
+	padding: 30px;
+	background: #f0f0f0;
+	font-family: Helvetica, sans-serif;
+}
+
+#wrap {
+	background-color: white;
+	padding: 50px;
+	border-radius: 15px;
+	box-shadow: 0 5px 20px rgba(0,0,0,.15);
+}
+
+h1 {
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+
+#container {
+	display: grid;
+	grid-template-columns: 200px auto;
+}
+
+#products {
+	padding-top: 90px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-column-gap: 40px;
+	grid-row-gap: 40px;
+}
+
+.product {
+	background-color: #f6f6f6;
+	position: relative;
+	border-radius: 4px;
+	min-height: 250px;
+}
+
+.product-image {
+	background-color: #f6f6f6;
+	background-image: url('../img/classic_grey.jpg');
+	background-size: auto 90% ;
+	background-repeat: no-repeat;
+	background-position: center 15px;
+	height: 200px;
+}
+
+.product:hover .fa-star {
+	color: black;
+	border-color: black;
+}
+
+.product:hover .fa-star:hover {
+	color: #ecb936;
+}
+
+.description {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+}
+
+.description h4 {
+	margin: 0;
+}
+
+.description small {
+	color: #afafaf;
+}
+
+.price {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	text-align: right;
+}
+
+.price span {
+	display: block;
+	font-size: 14px;
+	margin-bottom: 4px;
+}
+
+.price .button {
+	text-decoration: none;
+	color: #b1b1b1;
+	border: 1px solid #b1b1b1;
+	border-radius: 15px;
+	font-size: 9px;
+	padding: 5px;
+}
+
+.price .button:hover {
+	background: black;
+	color: white;
+	border-color: black;
+}
+
+.fa-star {
+	float: right;
+	padding: 5px;
+	margin: 5px;
+	color: #d7d7d7;
+	border: 1px solid #d7d7d7;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+#sidebar > nav {
+	position: fixed;
+}
+
+#sidebar ul {
+	padding-left: 0;
+	list-style: none;
+}
+
+#sidebar ul li a {
+	text-decoration: none;
+	color: #d2d2d2;
+	font-size: 17px;
+	display: block;
+	padding-bottom: 20px;
+}
+
+#sidebar ul li a:hover {
+	color: black;
+}
+
+#sidebar > nav > ul > li.active > a {
+	font-weight: bold;
+	color: black;
+	margin-top: -25px;
+}
+
+#sidebar > nav > ul > li.active > a::after {
+	content: '•';
+	font-size: 48px;
+}
+
+#sidebar > nav > ul > li > ul {
+	padding-left: 20px;
+}
+
+#sidebar > nav > ul > li > ul > li > a {
+	font-size: 14px;
+}
+
+#sidebar > nav > ul > li > ul > li.active > a {
+	text-decoration: underline;
+	color: black;
+}
