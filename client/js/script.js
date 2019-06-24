@@ -48,7 +48,7 @@ window.onload = () => {
 				products.forEach( (p) => {
 				    products_ul.insertAdjacentHTML('beforeEnd', `
 	       <div class="product">
-            <div class="product-image">
+            <div class="product-image" style="background: url('../${p.picture} center cover;')">
               <i class="far fa-star"></i>
             </div>
             <div class="product-extras">
@@ -67,9 +67,6 @@ window.onload = () => {
       })
     }
   })
-
-
-
 
 
 }

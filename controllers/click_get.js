@@ -7,6 +7,7 @@ module.exports = (req, res) => {
 car_shop.id,
 car_shop.brand,
 car_shop.price,
+car_shop.picture,
 car_shop.model,
 category.name AS "category"
 FROM car_shop

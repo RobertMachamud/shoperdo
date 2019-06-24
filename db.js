@@ -4,7 +4,7 @@ const {Client} = require('pg')
 
 // create connection to database
 const db = new Client ({
-	// shopredo sql table
+	// car_shop sql table
 	connectionString: 'postgres://robertmachamud:@localhost:5432/products'
 })
 
